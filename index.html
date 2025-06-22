@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infinite-ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --gold: #cbb26a;
+            --black: #000000;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--white);
+            background-color: var(--black);
+        }
+        .gold-border:hover {
+            border-color: var(--gold);
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-6 flex justify-between items-center">
+        <div class="text-2xl font-bold text-[var(--gold)]">infinite-ai</div>
+        <nav class="space-x-6">
+            <a href="#produkte" class="hover:text-[var(--gold)]">Produkte</a>
+            <a href="#ueberuns" class="hover:text-[var(--gold)]">Über uns</a>
+            <a href="#kontakt" class="hover:text-[var(--gold)]">Kontakt</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="container mx-auto px-4 py-20 text-center" id="hero">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Arbeiten Sie noch manuell? Verlieren Sie Zeit & Geld? Wir entfesseln das Potenzial von KI in Ihrem Unternehmen. Mit infinite-ai werden Prozesse intelligent, effizient und skalierbar.</h1>
+        <a href="#kontakt" class="inline-block bg-[var(--gold)] text-black px-8 py-4 rounded-md font-bold hover:opacity-80">Jetzt Beratung anfordern</a>
+    </section>
+
+    <!-- Unsere Mission -->
+    <section id="ueberuns" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-4 text-[var(--gold)]">Unsere Mission</h2>
+        <p class="mb-6 italic">Zertifizierte KI-Beratung, präzise Analyse & maßgeschneiderte KI-Agenten. Lokal & sicher.</p>
+        <ul class="list-disc pl-5 space-y-2">
+            <li>Fixpreis-Angebote</li>
+            <li>Lokales Hosting möglich</li>
+            <li>Fokus auf Datenschutz & Know-how-Schutz</li>
+            <li>Langjährige Erfahrung in IT & Automatisierung</li>
+        </ul>
+    </section>
+
+    <!-- Unsere Produktpakete -->
+    <section id="produkte" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-10 text-[var(--gold)]">Unsere Produktpakete</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="border border-gray-700 p-6 rounded-md transition-colors gold-border">
+                <h3 class="text-xl font-bold mb-2">Awareness</h3>
+                <p class="mb-2">Einführung in KI-Potenziale für Entscheider.</p>
+                <p class="font-semibold">Fixpreis: ab 2.000 €</p>
+            </div>
+            <div class="border border-gray-700 p-6 rounded-md transition-colors gold-border">
+                <h3 class="text-xl font-bold mb-2">Analyse</h3>
+                <p class="mb-2">Detailanalyse Ihrer Prozesse und Daten.</p>
+                <p class="font-semibold">Fixpreis: ab 5.000 €</p>
+            </div>
+            <div class="border border-gray-700 p-6 rounded-md transition-colors gold-border">
+                <h3 class="text-xl font-bold mb-2">Integration</h3>
+                <p class="mb-2">Implementierung maßgeschneiderter KI-Agenten.</p>
+                <p class="font-semibold">Fixpreis: auf Anfrage</p>
+            </div>
+            <div class="border border-gray-700 p-6 rounded-md transition-colors gold-border">
+                <h3 class="text-xl font-bold mb-2">Weiterbildung</h3>
+                <p class="mb-2">Schulungen für Ihr Team zur effizienten KI-Nutzung.</p>
+                <p class="font-semibold">Fixpreis: ab 3.000 €</p>
+            </div>
+            <div class="border border-gray-700 p-6 rounded-md transition-colors gold-border">
+                <h3 class="text-xl font-bold mb-2">Infrastruktur</h3>
+                <p class="mb-2">Bereitstellung lokaler oder Cloud-basierter KI-Lösungen.</p>
+                <p class="font-semibold">Fixpreis: auf Anfrage</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warum infinite-ai -->
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-6 text-[var(--gold)]">Warum infinite-ai?</h2>
+        <ul class="space-y-2">
+            <li>✅ Zertifizierte KI-Automation Experts</li>
+            <li>✅ Lokales LLM-Hosting</li>
+            <li>✅ Effizienzsteigerung bis zu 30 %</li>
+            <li>✅ Branchenübergreifend anwendbar</li>
+        </ul>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section id="kontakt" class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-6 text-[var(--gold)]">Kontakt</h2>
+        <form class="space-y-4 max-w-xl">
+            <div>
+                <label class="block mb-1" for="name">Name</label>
+                <input class="w-full p-2 rounded-md text-black" type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label class="block mb-1" for="email">E-Mail</label>
+                <input class="w-full p-2 rounded-md text-black" type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label class="block mb-1" for="firma">Firma</label>
+                <input class="w-full p-2 rounded-md text-black" type="text" id="firma" name="firma">
+            </div>
+            <div>
+                <label class="block mb-1" for="nachricht">Nachricht</label>
+                <textarea class="w-full p-2 rounded-md text-black" id="nachricht" name="nachricht" rows="4" required></textarea>
+            </div>
+            <p class="text-sm">Mit dem Absenden erklären Sie sich mit unserer Datenschutzerklärung einverstanden.</p>
+            <button class="bg-[var(--gold)] text-black px-6 py-2 rounded-md font-bold hover:opacity-80" type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm">
+            <div class="space-x-4 mb-4 md:mb-0">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <div class="space-x-4 mb-4 md:mb-0">
+                <span>Social Icons</span>
+            </div>
+            <div>© 2025 infinite-ai</div>
+        </div>
+    </footer>
+</body>
+</html>
