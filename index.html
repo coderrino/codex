@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>infinite-ai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --gold: #cbb26a;
+            --black: #000000;
+            --white: #ffffff;
+        }
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: var(--black);
+            color: var(--white);
+        }
+        .gold-border:hover {
+            border-color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="container mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+        <img src="assets/logo.svg" alt="infinite-ai" class="h-20 mb-4 md:mb-0">
+        <p class="text-center md:text-right text-lg">Arbeiten Sie noch manuell – oder nutzen Sie schon die unendliche Kraft der KI?</p>
+    </header>
+
+    <!-- Hinweis Block -->
+    <section class="bg-cover bg-center text-center py-20" style="background-image:url('./assets/welcome.jpg');">
+        <div class="bg-black bg-opacity-60 px-4 py-12 inline-block">
+            <p class="text-2xl mb-6">infinite-ai startet demnächst. Jetzt vormerken und informiert bleiben!</p>
+            <a href="#kontakt" class="scroll-btn inline-block bg-[var(--gold)] text-black px-8 py-3 rounded-md font-semibold hover:opacity-80">Zur Voranmeldung</a>
+        </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="container mx-auto px-4 py-16" id="mission">
+        <h2 class="text-3xl font-bold mb-6 text-[var(--gold)]">Unsere Mission</h2>
+        <p class="max-w-3xl leading-relaxed">
+            Wir bei Infinite AI glauben fest daran, dass künstliche Intelligenz der Schlüssel zu einer effizienteren und innovativeren Zukunft ist. Unsere Mission ist es, Unternehmen dabei zu unterstützen, sich voll und ganz auf ihre Kernkompetenzen zu konzentrieren, während wir die Integration und Betreuung der KI-Lösungen übernehmen und so nachhaltiges Wachstum fördern.
+        </p>
+    </section>
+
+    <!-- Pakete Übersicht -->
+    <section class="bg-cover bg-center py-20" style="background-image:url('./assets/pakages.jpg');">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-[var(--gold)] text-center">Unsere Pakete</h2>
+            <div class="grid gap-6 md:grid-cols-3 lg:grid-cols-5">
+                <div class="border border-gray-600 p-6 rounded-md text-center transition-colors gold-border bg-black bg-opacity-60">
+                    <i class="fa-solid fa-lightbulb text-[var(--gold)] text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Paket 1 – Einstieg & Orientierung</h3>
+                    <p class="mb-4">Künstliche Intelligenz verständlich erklärt – ganz ohne Fachchinesisch.</p>
+                    <a href="#paket1" class="scroll-btn text-[var(--gold)] underline">Details anzeigen</a>
+                </div>
+                <div class="border border-gray-600 p-6 rounded-md text-center transition-colors gold-border bg-black bg-opacity-60">
+                    <i class="fa-solid fa-chart-line text-[var(--gold)] text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Paket 2 – Prozessanalyse & Strategie</h3>
+                    <p class="mb-4">Wo bringt KI Ihrem Unternehmen wirklich etwas?</p>
+                    <a href="#paket2" class="scroll-btn text-[var(--gold)] underline">Details anzeigen</a>
+                </div>
+                <div class="border border-gray-600 p-6 rounded-md text-center transition-colors gold-border bg-black bg-opacity-60">
+                    <i class="fa-solid fa-robot text-[var(--gold)] text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Paket 3 – Umsetzung & Integration</h3>
+                    <p class="mb-4">Von der Idee zur Umsetzung: wir bringen KI konkret in Ihr Unternehmen.</p>
+                    <a href="#paket3" class="scroll-btn text-[var(--gold)] underline">Details anzeigen</a>
+                </div>
+                <div class="border border-gray-600 p-6 rounded-md text-center transition-colors gold-border bg-black bg-opacity-60">
+                    <i class="fa-solid fa-chalkboard-user text-[var(--gold)] text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Paket 4 – Schulung & Enablement</h3>
+                    <p class="mb-4">KI im Alltag anwenden können – praxisnah und rollenbasiert.</p>
+                    <a href="#paket4" class="scroll-btn text-[var(--gold)] underline">Details anzeigen</a>
+                </div>
+                <div class="border border-gray-600 p-6 rounded-md text-center transition-colors gold-border bg-black bg-opacity-60">
+                    <i class="fa-solid fa-layer-group text-[var(--gold)] text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Paket 5 – Komplettlösung & Betreuung</h3>
+                    <p class="mb-4">Dieses Paket ist in Entwicklung. Interessenten können sich vorregistrieren.</p>
+                    <a href="#paket5" class="scroll-btn text-[var(--gold)] underline">Details anzeigen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paket Details -->
+    <section class="container mx-auto px-4 py-16 space-y-16">
+        <!-- Paket 1 -->
+        <div id="paket1">
+            <h3 class="text-2xl font-bold text-[var(--gold)] mb-4">Paket 1 – Einstieg & Orientierung</h3>
+            <p class="mb-4">Unser Einstiegsmodul für Unternehmen, die wissen wollen, was KI heute wirklich kann – verständlich, praxisnah und mit Mehrwert zum Mitnehmen.</p>
+            <ul class="list-disc pl-5 space-y-1 mb-4">
+                <li>Präsenz-Workshop bei Ihnen vor Ort (ca. 4–5 Stunden)</li>
+                <li>Einstiegsvortrag zu Grundlagen, Chancen und Trends der KI</li>
+                <li>Praxisbeispiele aus Industrie, Handwerk und Dienstleistung</li>
+                <li>Interaktiver Teil mit Fragerunden</li>
+                <li>Persönliches Abschluss-Briefing mit Potenzialeinschätzung</li>
+                <li>Hochwertiges Handout-Booklet</li>
+            </ul>
+            <p class="font-semibold mb-2">Fixpreis: 2.000 € netto</p>
+        </div>
+        <!-- Paket 2 -->
+        <div id="paket2">
+            <h3 class="text-2xl font-bold text-[var(--gold)] mb-4">Paket 2 – Prozessanalyse & Strategie</h3>
+            <p class="mb-4">Wo bringt KI Ihrem Unternehmen wirklich etwas?</p>
+            <ul class="list-disc pl-5 space-y-1 mb-4">
+                <li>Vor-Ort-Workshop (1 Tag) zur Analyse Ihrer Prozesse</li>
+                <li>Erhebung von Herausforderungen & KI-relevanten Daten</li>
+                <li>Ausarbeitung eines maßgeschneiderten KI-Konzepts</li>
+                <li>Hochwertiges Ergebnis-Booklet</li>
+                <li>Abschlussbesprechung</li>
+            </ul>
+            <p class="font-semibold mb-2">Fixpreis: 4.900 € netto</p>
+        </div>
+        <!-- Paket 3 -->
+        <div id="paket3">
+            <h3 class="text-2xl font-bold text-[var(--gold)] mb-4">Paket 3 – Umsetzung & Integration</h3>
+            <p class="mb-4">Von der Idee zur Umsetzung – inklusive Analyse, Integration & erlebbarem Ergebnis.</p>
+            <ul class="list-disc pl-5 space-y-1 mb-4">
+                <li>Analyse aus Paket 2 inklusive (oder Rabatt bei vorhandener Analyse)</li>
+                <li>Umsetzung eines KI-Anwendungsfalls (z. B. Chat-/Telefonassistent)</li>
+                <li>Integration über Cloud-Tools wie OpenAI, Make, Web-APIs</li>
+                <li>Auslieferung eines einsatzbereiten Online-Agenten</li>
+                <li>Schulung & Testphase</li>
+                <li>Optional: lokale Hosting-Variante (separat kalkuliert)</li>
+            </ul>
+            <p class="font-semibold mb-2">Paketpreis: 9.900 € netto (inkl. Analyse)</p>
+        </div>
+        <!-- Paket 4 -->
+        <div id="paket4">
+            <h3 class="text-2xl font-bold text-[var(--gold)] mb-4">Paket 4 – Schulung & Enablement</h3>
+            <p class="mb-4">Technologie wirkt nur, wenn Menschen sie anwenden können.</p>
+            <ul class="list-disc pl-5 space-y-1 mb-4">
+                <li>Vor-Ort-Workshop (ca. 4–5 Stunden) für bis zu 12 Teilnehmer</li>
+                <li>Einführung in KI-Werkzeuge im Arbeitsalltag</li>
+                <li>Praktisches Prompt-Training</li>
+                <li>Tools aus Analyse, Text & Automatisierung</li>
+                <li>Q&A-Zeit</li>
+                <li>Handout-Booklet</li>
+                <li>Teilnahmezertifikat (Infinity-AI)</li>
+            </ul>
+            <p class="font-semibold mb-2">Fixpreis: 3.900 € netto</p>
+        </div>
+        <!-- Paket 5 -->
+        <div id="paket5">
+            <h3 class="text-2xl font-bold text-[var(--gold)] mb-4">Paket 5 – Komplettlösung & Betreuung</h3>
+            <p class="mb-4">Einmal alles, bitte: Dieses Paket bündelt Analyse, Umsetzung, Schulung & Betreuung. Ideal für Unternehmen, die KI umfassend integrieren wollen.</p>
+            <p class="mb-2 italic">Dieses Paket ist in Entwicklung. Interessenten können sich vorregistrieren.</p>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="bg-cover bg-center py-20 px-10" style="background-image:url('./assets/mail.jpg');">
+        <h2 class="text-3xl font-bold mb-6 text-[var(--gold)]">Kontakt</h2>
+        <form class="space-y-4 max-w-xl">
+            <div>
+                <label class="block mb-1" for="name">Name</label>
+                <input class="w-full p-2 rounded-md text-black" id="name" name="name" required>
+            </div>
+            <div>
+                <label class="block mb-1" for="firma">Firma</label>
+                <input class="w-full p-2 rounded-md text-black" id="firma" name="firma">
+            </div>
+            <div>
+                <label class="block mb-1" for="email">E-Mail</label>
+                <input class="w-full p-2 rounded-md text-black" type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label class="block mb-1" for="msg">Nachricht</label>
+                <textarea class="w-full p-2 rounded-md text-black" id="msg" name="msg" rows="4" required></textarea>
+            </div>
+            <button class="bg-[var(--gold)] text-black px-6 py-2 rounded-md font-semibold hover:opacity-80" type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-sm">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="space-x-4 mb-4 md:mb-0">
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </div>
+            <div>© 2025 infinite-ai</div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.scroll-btn').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelector(btn.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+            });
+        });
+    </script>
+</body>
+</html>
